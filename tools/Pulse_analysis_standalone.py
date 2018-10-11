@@ -26,8 +26,7 @@ import matplotlib.pyplot as plt
 
 class PulseAnalysis:
 
-    def __init__(self, counter_gated, counter_binwidth):
-        self.is_counter_gated = bool(counter_gated)
+    def __init__(self, counter_binwidth):
         self.counter_binwidth = counter_binwidth
         # std. deviation of the gaussian filter.
         # Too small and the filtered data is too noisy to analyze; too big and the pulse edges are
